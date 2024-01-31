@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "links": [
+      { "name": "Fonctionnalités", "href": "/#Fonctionnalités" },
+      { "name": "Tarification", "href": "/#Tarification" },
+      { "name": "Notre Processus", "href": "/#notre-processus" }
+    ],
+    "buttonText": "Commencer"
+  },
+  "heroSection": {
+    "heading": {
+      "0": "Là où",
+      "1": "l'IA Avancée",
+      "2": "&",
+      "3": "l'Empathie Humaine",
+      "4": "Créent une Expérience Client Inégalée"
+    },
+    "subheading": "Support Sur Mesure pour un Service Client Efficace, Économique et Satisfaisant.",
+    "buttonText": "Planifier une Démonstration"
+  },
+  "footerSection": {
+    "links": [
+      {"name": "Back to Top", "href": "/"},
+      {"name": "Privacy Policy", "href": "/"},
+      {"name": "Terms of Service", "href": "/"}
+    ],
+    "copyRight": "© 2023 by VIAYZE. All rights are reserved."
+  }}

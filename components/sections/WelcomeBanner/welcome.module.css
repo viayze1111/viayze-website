@@ -1,0 +1,58 @@
+.video_player > div {
+  height: 576px;
+}
+
+.video_player > div > div > iframe html > body > div > div  {
+  display: none;
+}
+
+.video_player > div > div > iframe {
+  border-radius: 16px;
+}
+
+.video_player > div {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .video_player > div {
+    height: 576px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .video_player > div {
+    height: 576px !important;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -20rem 0;
+  }
+  100% {
+    background-position: 20rem 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.skeleton_shimmer {
+  border-radius: 16px;
+  animation: shimmer 5s linear infinite;
+  background: linear-gradient(
+    -45deg, 
+    #0B161A 25%, 
+    #13262d 40%, 
+    #0B161A 75%
+  );
+  background-size: 200% 100%;
+}
