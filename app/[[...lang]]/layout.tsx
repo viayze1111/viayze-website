@@ -52,8 +52,7 @@ interface RootLayoutProps {
     lang: TLocale
   };
 }
-console.clear();
-console.log("Realised by New Web Order: https://www.newweborder.co/")
+
 const RootLayout: React.FC<RootLayoutProps> = async ({ children, params }) => {
   const dict = await getDictionary(params.lang || 'en');
 

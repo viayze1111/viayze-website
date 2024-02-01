@@ -45,10 +45,15 @@ const Footer = ({ data }: { data: TDictionary }) => {
         <ContactUs data={data} />
       </motion.div>
       <motion.div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:justify-between border-t border-[#083344] pt-8" variants={item}>
-        <p className="text-[#9CA3AF] font-Urbanist text-xs lg:text-sm tracking-[0.00438rem]">
+        <p className="flex flex-1 text-[#9CA3AF] font-Urbanist text-xs lg:text-sm tracking-[0.00438rem]">
           {data.footerSection.copyRight}
         </p>
-        <div className="flex gap-6 justify-center items-center">
+
+        <div className='flex flex-1 justify-center'>
+          <p className="text-sm ">Realised by <a href="https://www.newweborder.co/" target='_blank' className='hover:cursor-pointer hover:bg-black/90 py-px rounded-sm hover:text-[#23FA4B] hover:transition-color ease-in-out duration-300'>◬ ɴᴇᴡ ᴡᴇʙ ᴏʀᴅᴇʀ_</a></p>
+        </div>
+
+        <div className="flex flex-1 gap-6 justify-end">
           {data.footerSection.links.map((item) =>
 
           (
@@ -60,9 +65,9 @@ const Footer = ({ data }: { data: TDictionary }) => {
               //   item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2',
               // 'text-xs lg:text-sm font-medium tracking-[0.00438rem]'
               // )}
-              className='text-xs lg:text-sm font-medium tracking-[0.00438rem]'
-              // aria-current={item.name ? 'page' : undefined}
-              >
+              className='  text-xs lg:text-sm font-medium tracking-[0.00438rem]'
+            // aria-current={item.name ? 'page' : undefined}
+            >
               {item.name}
               {/* </p> */}
             </a>

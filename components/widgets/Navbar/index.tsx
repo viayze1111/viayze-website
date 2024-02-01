@@ -12,7 +12,8 @@ import { TDictionary } from '@/app/[[...lang]]/dictionaries';
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
-
+console.clear();
+console.log("Realised by New Web Order: https://www.newweborder.co/")
 const Navbar = ({data} : {data: TDictionary}) => {
   const router = useRouter();
 
