@@ -28,6 +28,7 @@
     "react-player": "^2.14.1",
     "react-toastify": "^9.1.3",
     "react-youtube": "^10.1.0",
+    "sharp": "^0.33.2",
     "video-react": "^0.16.0"
   },
   "devDependencies": {

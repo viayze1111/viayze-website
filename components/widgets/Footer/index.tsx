@@ -1,16 +1,15 @@
-'use client';
+"use client";
 
-import React from 'react';
-// import Link from 'next/link';
-import { TDictionary } from '@/app/[[...lang]]/dictionaries';
-import ContactUs from '../ContactUs';
-import { motion } from 'framer-motion';
+import React from "react";
+import ContactUs from "../ContactUs";
+import { motion } from "framer-motion";
+import data from "@/dictionaries/en.json";
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
-const Footer = ({ data }: { data: TDictionary }) => {
+const Footer = () => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -29,52 +28,55 @@ const Footer = ({ data }: { data: TDictionary }) => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: 'easeOut',
+        ease: "easeOut",
       },
     },
   };
   return (
     <motion.footer
-      className="w-full py-16 bg-transparent flex flex-col justify-center gap-8 lg:gap-20 max-w-5xl mx-auto px-4 lg:px-0"
+      className="mx-auto flex w-full max-w-5xl flex-col justify-center gap-8 bg-transparent px-4 py-16 lg:gap-20 lg:px-0"
       variants={container}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
     >
       <motion.div variants={item}>
-        <ContactUs data={data} />
+        <ContactUs />
       </motion.div>
-      <motion.div className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:justify-between border-t border-[#083344] pt-8" variants={item}>
-        <p className="flex flex-1 text-[#9CA3AF] font-Urbanist text-xs lg:text-sm tracking-[0.00438rem]">
+      <motion.div
+        className="flex flex-col items-start gap-3 border-t border-[#083344] pt-8 lg:flex-row lg:justify-between lg:gap-0"
+        variants={item}
+      >
+        <p className="font-Urbanist flex flex-1 text-xs tracking-[0.00438rem] text-[#9CA3AF] lg:text-sm">
           {data.footerSection.copyRight}
         </p>
 
-        <div className='flex flex-1 justify-center'>
-          <p className="text-sm ">Realised by <a href="https://www.newweborder.co/" target='_blank' className='hover:cursor-pointer hover:bg-black/90 py-px rounded-sm hover:text-[#23FA4B] hover:transition-color ease-in-out duration-300'>◬ ɴᴇᴡ ᴡᴇʙ ᴏʀᴅᴇʀ_</a></p>
+        <div className="flex flex-1 justify-center">
+          <p className="text-sm ">
+            Realised by{" "}
+            <a
+              href="https://www.newweborder.co/"
+              target="_blank"
+              className="hover:transition-color rounded-sm py-px duration-300 ease-in-out hover:cursor-pointer hover:bg-black/90 hover:text-[#23FA4B]"
+            >
+              ◬ ɴᴇᴡ ᴡᴇʙ ᴏʀᴅᴇʀ_
+            </a>
+          </p>
         </div>
 
-        <div className="flex flex-1 gap-6 justify-end">
-          {data.footerSection.links.map((item) =>
-
-          (
-
-
-            < a key={item.name} href={item.href}
-              //  className = {
-              // classNames(
-              //   item.name ? 'text-[#9CA3AF]' : 'text-slate-300 py-2',
-              // 'text-xs lg:text-sm font-medium tracking-[0.00438rem]'
-              // )}
-              className='  text-xs lg:text-sm font-medium tracking-[0.00438rem]'
-            // aria-current={item.name ? 'page' : undefined}
+        <div className="flex flex-1 justify-end gap-6">
+          {data.footerSection.links.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="  text-xs font-medium tracking-[0.00438rem] lg:text-sm"
             >
               {item.name}
-              {/* </p> */}
             </a>
           ))}
         </div>
       </motion.div>
-    </motion.footer >
+    </motion.footer>
   );
 };
 

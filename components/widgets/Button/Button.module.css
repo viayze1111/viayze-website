@@ -1,36 +1,33 @@
 .root {
-  @apply cursor-pointer inline-flex px-2.5 tracking-[0.00438rem] font-semibold transition ease-in-out duration-150 shadow-sm text-center justify-center items-center;
+  @apply inline-flex cursor-pointer items-center justify-center px-2.5 text-center font-semibold tracking-[0.00438rem] shadow-sm transition duration-150 ease-in-out;
 }
 
 /********** SIZE **********/
 
-.root[data-size='small'] {
-  @apply text-sm h-8 rounded-lg;
+.root[data-size="small"] {
+  @apply h-8 rounded-lg text-sm;
 }
 
-.root[data-size='default'] {
-  @apply text-[0.9375rem] h-12 rounded-xl pt-[1px];
+.root[data-size="default"] {
+  @apply h-12 rounded-xl pt-[1px] text-[0.9375rem];
 }
-
 
 /********** SURFACE **********/
 
-.root[data-shape='surface'] {
-  @apply bg-[#08334480] text-[#67E8F9] border border-[#164E63];
+.root[data-shape="surface"] {
+  @apply border border-[#164E63] bg-[#08334480] text-[#67E8F9];
 }
 
-.root[data-shape='surface']:hover {
+.root[data-shape="surface"]:hover {
   @apply bg-[#083344e6];
 }
 
-
 /********** FILLED **********/
 
-.root[data-shape='filled'] {
-  @apply bg-[#0891B2] text-[#fff] border border-[#06B6D4];
+.root[data-shape="filled"] {
+  @apply border border-[#06B6D4] bg-[#0891B2] text-[#fff];
 }
 
-.root[data-shape='filled']:hover {
+.root[data-shape="filled"]:hover {
   @apply bg-[#0E7490];
 }
-
