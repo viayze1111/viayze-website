@@ -2,24 +2,25 @@
 
 import React from "react";
 import ServiceCard from "@/components/widgets/ServiceCard";
-import aRMobileLottie from "@/lotties/AR_Mobile_lottie.json";
-import dShapeLottie from "@/lotties/3D_Shape03_lottie.json";
-import generateAiLottie from "@/lotties/Generate_Ai_lottie.json";
-import brainCheckLottie from "@/lotties/Brain_Check_lottie.json";
-import augmentedRealityHuman from "@/lotties/Augmented_reality_Human-1_lottie.json";
-import generateHumanLottie from "@/lotties/Generate_human_lottie.json";
 import { motion } from "framer-motion";
 import Badge from "@/components/widgets/Badge";
+import aRMobileLottie from "@/lotties/AR_Mobile_lottie.json";
+// import dShapeLottie from "@/lotties/3D_Shape03_lottie.json";
+// import generateAiLottie from "@/lotties/Generate_Ai_lottie.json";
+import brainCheckLottie from "@/lotties/Brain_Check_lottie.json";
+import augmentedRealityHuman from "@/lotties/Augmented_reality_Human-1_lottie.json";
+// import generateHumanLottie from "@/lotties/Generate_human_lottie.json";
+
 import data from "@/dictionaries/en.json";
+// import Lottie from "lottie-react";
 
 const FeaturesOverview = () => {
   const lottieAnimations = [
-    aRMobileLottie,
-    dShapeLottie,
-    generateAiLottie,
     brainCheckLottie,
     augmentedRealityHuman,
-    generateHumanLottie,
+    aRMobileLottie,
+
+
   ];
 
   const container = {
@@ -60,7 +61,7 @@ const FeaturesOverview = () => {
             className="rounded-full border border-[#022C22] bg-gradient-to-t from-[#022c2299] to-[#022c2200] text-[#10B981]"
           />
         </div>
-        <h2 className="mx-auto max-w-[44rem] text-2xl font-semibold tracking-[0.00625rem] text-[#F3F4F6] lg:text-5xl lg:tracking-[0.015rem]">
+        <h2 className="mx-auto max-w-[28rem] text-2xl font-semibold tracking-[0.00625rem] text-[#F3F4F6] lg:leading-[2.723rem] lg:font-bold lg:text-4xl  ">
           <span>{data.featuresSection.heading[0]}</span>
           <span className="text-[#22D3EE]">
             {data.featuresSection.heading[1]}
@@ -71,13 +72,14 @@ const FeaturesOverview = () => {
           {data.featuresSection.subheading}
         </p>
       </motion.div>
-      <div className="grid-cols-1fr gay-y-4 mx-auto grid max-w-5xl gap-x-20 px-0 sm:px-6 lg:grid-cols-3 lg:gap-y-6 lg:px-0">
+      <div className="grid-cols-1fr gap-y-4 mx-auto grid max-w-5xl gap-x-4 px-0 sm:px-6 lg:grid-cols-3 lg:gap-y-6 lg:px-0">
         {data.featuresSection.features.map((feature, index) => (
           <motion.div key={index} variants={item}>
             <ServiceCard
               key={index}
               animatedIconData={
                 lottieAnimations[index % lottieAnimations.length]
+              
               }
               title={feature.feature}
               description={feature.description}

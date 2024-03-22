@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import dataAnalysisProcess from "@/public/assets/icons/data-analysis-process.svg";
+import dataUsing from "@/public/assets/images/data_using.svg";
 import Image from "next/image";
 import Button from "@/components/widgets/Button";
 import { motion } from "framer-motion";
@@ -62,7 +62,7 @@ const DataAnalysis = () => {
             }}
           >
             <Image
-              src={dataAnalysisProcess}
+              src= {dataUsing}
               alt="data analysis process"
               width={443.633}
               height={298.041}
@@ -74,11 +74,11 @@ const DataAnalysis = () => {
           className="flex flex-[0.8_1_0%] flex-col items-center gap-4 text-center lg:items-start lg:gap-8 lg:text-left"
           variants={item}
         >
-          <span className="text-md bg-gradient-to-r from-cyan-500 to-cyan-600 bg-clip-text font-semibold tracking-[0.00438rem] text-transparent">
+          <span className="text-sm bg-gradient-to-r from-cyan-500 to-cyan-600 bg-clip-text font-medium tracking-[0.00438rem] leading-[1.059rem] text-transparent">
             {data.analysisSection.highlight}
           </span>
           <div>
-            <h2 className="text-xl font-bold tracking-[0.01125rem] text-[#F3F4F6] lg:text-4xl">
+            <h2 className="text-xl font-bold tracking-[0.01125rem] text-[#F3F4F6] lg:text-4xl lg:leading-[2.723rem]">
               <span>{data.analysisSection.heading[0]}</span>
               <span className="text-[#22D3EE]">
                 {data.analysisSection.heading[1]}
@@ -86,12 +86,12 @@ const DataAnalysis = () => {
               <span>{data.analysisSection.heading[2]}</span>
             </h2>
           </div>
-          <p className="text-sm font-medium tracking-[0.007rem] text-[#D1D5DB] lg:text-base">
+          <p className="text-sm font-medium tracking-[0.007rem] text-[#D1D5DB] lg:text-lg lg:leading-[1.75rem]">
             {data.analysisSection.description}
           </p>
           <motion.div variants={item} className="mt-4 lg:mt-0">
             <a
-              href={process.env.CTA_REDIRECT_LINK}
+              href={process.env.NEXT_PUBLIC_CTA_REDIRECT_LINK}
               target="_blank"
               rel="noopener noreferrer"
             >

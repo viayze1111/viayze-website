@@ -49,7 +49,7 @@ const PriceBreakdown = () => {
               className="rounded-full border border-[#451A03] bg-gradient-to-t from-[#451a0300] to-[#451a0399] text-[#F59E0B]"
             />
           </motion.div>
-          <motion.h2 className="text-xl font-semibold tracking-[0.00625rem] text-[#F3F4F6] lg:text-5xl lg:tracking-[0.015rem]">
+          <motion.h2 className="text-xl font-bold tracking-[0.00625rem] text-[#F3F4F6] lg:text-4xl lg:tracking-[0.015rem] lg:leading-[2.723rem]">
             <span>{data.pricingSection.heading[0]}</span>
             <span className="text-[#22D3EE]">
               {" "}
@@ -66,11 +66,13 @@ const PriceBreakdown = () => {
               <PricingCard
                 key={option.title}
                 title={option.title}
-                price={option.price}
+                price={option.price} 
+                monthly={option.monthly}
+                // hourly={option.hourly}
                 description={option.description}
                 features={option.features}
                 buttonText={option.buttonText}
-                badge={option.badge}
+                // badge={option.badge}
                 isActive={
                   index === data.pricingSection.pricingOptions.length - 1
                 }

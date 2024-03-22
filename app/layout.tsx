@@ -19,7 +19,7 @@ export const metadata = {
   description: meta.description,
   robots: meta.robots,
   favicon: meta.favicon,
-  metadataBase: new URL(`${process.env.NEXT_APP_URL}`),
+  // metadataBase: new URL(`${process.env.NEXT_APP_URL}`),
   type: meta.type,
   openGraph: {
     title: meta.title,

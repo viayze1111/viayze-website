@@ -83,17 +83,17 @@ const OnBoardingProcess = () => {
               className="rounded-full border border-[#3B0764] bg-gradient-to-t from-[#3b076499] to-[#3b076400] text-[#A855F7]"
             />
           </motion.div>
-          <motion.h2 className="text-xl font-semibold tracking-[0.00625rem] text-[#F3F4F6] lg:text-5xl lg:tracking-[0.015rem]">
+          <motion.h2 className="text-xl font-bold tracking-[0.00625rem] text-[#F3F4F6] lg:text-4xl lg:tracking-[0.015rem] lg:leading-[2.723rem]">
             <span className="text-[#22D3EE]">
               {data.onBoardingSection.heading[0]}
             </span>
             <span> {data.onBoardingSection.heading[1]} </span>
           </motion.h2>
-          <motion.p className="text-sm tracking-[0.00438rem] text-[#D1D5DB] lg:text-base lg:tracking-[0.005rem]">
+          <motion.p className="text-sm font-medium tracking-[0.00438rem] text-[#D1D5DB] lg:text-base lg:tracking-[0.005rem]">
             {data.onBoardingSection.subheading}
           </motion.p>
         </motion.div>
-        <motion.div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
+        <motion.div className="flex flex-col items-center gap-y-4 gap-x-0 lg:flex-row lg:items-start">
           {data.onBoardingSection.processes.map((process, index) => (
             <React.Fragment key={index}>
               <motion.div variants={item}>

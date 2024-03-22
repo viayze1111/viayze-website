@@ -54,7 +54,7 @@ const Navbar = () => {
                       <a key={item.name} href={item.href}>
                         <p
                           className={classNames(
-                            "transition-duration: 150ms rounded-xl px-3 py-2 text-sm font-medium tracking-[0.00438rem]	transition-all hover:bg-cyan-950/40 hover:text-[#22D3EE]",
+                            "transition-duration: 150ms rounded-xl px-3 py-2 text-sm font-medium tracking-[0.00438rem] leading-[1.059rem]	transition-all hover:bg-cyan-950/40 hover:text-[#22D3EE]",
                             item.name
                               ? "text-[#F3F4F6]"
                               : "text-[#22D3EE] underline",
@@ -70,7 +70,7 @@ const Navbar = () => {
                 <div className="absolute inset-y-0 right-0 hidden flex-1 items-center justify-end pr-2 lg:static lg:inset-auto lg:ml-0 lg:flex lg:pr-0">
                   {
                     <a
-                      href={process.env.CTA_REDIRECT_LINK}
+                      href={process.env.NEXT_PUBLIC_CTA_REDIRECT_LINK}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center"

@@ -9,54 +9,43 @@
   },
   "heroSection": {
     "heading": {
-      "0": "Elevating Your Business with Advanced ",
-      "1": "AI and Automations"
+      "0": "Book More Meetings with Hyper-",
+      "1": "Personalized Outreach"
     },
-    "subheading": "Step into an era of efficiency with our AI solutions. Intelligent automations seamlessly integrate, redefining workflows in your business.",
-    "buttonText": "Schedule a Demo"
+    "subheading": "Our bespoke email campaigns leverage hyper-personalized content to secure qualified leads for your calendar, freeing you to focus solely on closing deals.",
+    "buttonText": "Schedule A Demo"
   },
   "featuresSection": {
     "heading": {
       "0": "Explore Our ",
-      "1": "Wide Selection ",
-      "2": "of Creative Business Tools"
+      "1": "Selection ",
+      "2": "of Outreach Solutions"
     },
-    "subheading": "Elevating productivity across multiple domains through chatbots, automations and optimized workflows.",
+    "subheading": "Scale outreach, optimize campaigns, and book more meetings with bespoke outreach strategies.",
     "features": [
       {
-        "feature": "Customer Service",
-        "description": "Specialized platforms to boost query resolution and customer satisfaction."
+        "feature": "DFY Outreach",
+        "description": "Our premier Done-For-You Outreach solution. Experts manage campaigns, drive engagement and generate leads for you."
       },
       {
-        "feature": "Sales Systems",
-        "description": "Streamline the sales process from lead capture to deal closure, increasing productivity and revenue."
+        "feature": "Single Campaigns",
+        "description": "Take advantage of our full-service strategy & copywriting for single campaigns. Launch, promote, or sell with ease."
       },
       {
-        "feature": "Lead Management",
-        "description": "Efficiently manage leads with tools to ensure no missed opportunities and proper nurturing."
-      },
-      {
-        "feature": "Lead Generation",
-        "description": "Innovative solutions to attract and secure high-quality leads."
-      },
-      {
-        "feature": "Team Management",
-        "description": "Tools for better team collaboration, communication, task allocation, and project tracking."
-      },
-      {
-        "feature": "Client Management",
-        "description": "Strengthen client relationships with tools for enhanced communication."
+        "feature": "Email Consulting",
+        "description": "Our experts offer hourly sessions to answer questions and provide advice on strategy, copywriting, and infrastructure."
       }
+
     ]
   },
   "analysisSection": {
-    "highlight": "Optimize Workflows",
+    "highlight": "Optimized Outreach",
     "heading": {
       "0": "Effortless ",
       "1": "Efficiency",
       "2": ", Enduring Success"
     },
-    "description": "Our strategic automations redefine efficiency, requiring less effort while serving as the linchpin for sustained success and scalable growth. Seamlessly integrated into your operations, they create a dynamic foundation, streamlining processes and positioning your business for future scalability. Embrace a future where automated processes propel your business forward, simplifying complexities and fostering a path to enduring success.",
+    "description": "Experience our efficient outreach solutions for sustained success and scalable growth. Seamlessly integrated into your operations, our solutions streamline lead generation. Plus, dashboards to oversee campaign status.",
     "buttonText": "View our Pricing Plans"
   },
   "benefitsSection": {
@@ -65,7 +54,7 @@
       "1": "Viayze ",
       "2": "Advantage"
     },
-    "subheading": "More than just solutions, we're your partner in success.",
+    "subheading": "Beyond outreach solutions, we're your partner in success.",
     "cards": [
        {
         "title": "Partnership Approach",
@@ -87,78 +76,83 @@
   },
   "pricingSection": {
     "heading": {
-      "0": "Pricing based on ",
-      "1": "your needs"
+      "0": "Packages and pricing for ",
+      "1": "all budgets"
     },
-    "subheading": "For tailored solutions aligned with your objectives, a discovery call is essential. Prices listed are in USD, but it's important to note that we serve a diverse global clientele.",
+    "subheading": "For solutions aligned with your objectives, a discovery call is essential. Prices listed are in USD, but it's important to note that we serve a diverse global clientele.",
     "pricingOptions": [{
-        "title": "BASIC",
-        "price": "$1,500",
-        "description": "Start with the fundamentals for immediate operational enhancement.",
-        "features": [
-          { "text": "AI Audit" },
-          { "text": "Custom AI Strategy" },
-          { "text": "Basic Chatbots" },
-          { "text": "Basic Automations" },
-          { "text": "Ongoing Support" }
-        ],
-        "buttonText": "Get Started"
-      }, {
-        "title": "PRO",
-        "badge": "Most Popular",
+        "title": "Done-For-You Outreach",
         "price": "$2,000",
-        "description": "Everything in Basic, plus advanced features.",
+        "monthly": "per month",
+        "description": "Streamline your marketing with our full-service DFY Outreach, where our experts book meetings for you.",
+
         "features": [
-          { "text": "AI Audit" },
-          { "text": "Custom AI Strategy" },
-          { "text": "Tailored Chatbots" },
-          { "text": "Workflow Automations" },
-          { "text": "Ongoing Support" }
+          { "text": "Infrastructure" },
+          { "text": "Strategy Development" },
+          { "text": "Verified Leads" },
+          { "text": "Copywriting" },
+          { "text": "Inbox Management" }
         ],
-        "buttonText": "Get Started"
+        "buttonText": "Contact Us"
       }, {
-        "title": "ENTERPRISE",
+        "title": "Single Campaigns",
         "price": "Custom",
-        "description": "For large-scale applications managing serious workloads.",
+        "description": "Tailored emails for targeted impact. Perfect for one-time boosts in your marketing efforts.",
         "features": [
-          { "text": "AI Audit" },
-          { "text": "Custom AI Strategy" },
-          { "text": "Tailored Chatbots" },
-          { "text": "Workflow Automations" },
-          { "text": "24/7 Support" }
+          { "text": "Strategy Development" },
+          { "text": "Verified Leads" },
+          { "text": "Offer Revision" },
+          { "text": "Copywriting" },
+          { "text": "Sequencing" }
+        ],
+        "buttonText": "Contact Us"
+      }, {
+        "title": "Cold Email Consulting",
+        "price": "$75",
+        "monthly": "per hour",
+        "description": "1-on-1 sessions with our seasoned marketers. Ask questions, receive advice, and enhance your skills.",
+        "features": [
+          { "text": "Offer Creation" },
+          { "text": "Strategy" },
+          { "text": "Copywriting" },
+          { "text": "Testing Methods" },
+          { "text": "Workflow Automations" }
         ],
         "buttonText": "Contact Us"
       }
     ]
   },
   "howItWorksSection": {
-    "highlight": "Reply Instantly",
-    "heading": "Chatbot Builds",
-    "description": "Explore the transformative capabilities of our chatbots, surpassing conversation. These dynamic tools excel in lead generation, providing instant customer query responses, and seamlessly integrating data across applications. Elevate satisfaction and optimize data usage across your business ecosystem.",
-    "buttonText": "Learn more"
+    "highlight": "Hyper-Personalized",
+    "heading": {
+      "0": "Turning Readers into ",
+      "1": "Lifelong Buyers"
+    },
+    "description": "Personalization is the cornerstone of successful email marketing, and we've elevated it to new heights. By curating emails that resonate with the recipient, we propel engagement and conversion rates to extraordinary heights.",
+    "buttonText": "Get started"
   },
   "onBoardingSection": {
     "heading": {
-      "0": "Effortless ",
+      "0": "Seamless ",
       "1": "Onboarding with Viayze"
     },
-    "subheading": "From initial consultation to continuous enhancement",
+    "subheading": "From Initial Consultation to Continuous Enhancement",
     "processes": [
       {
         "process": "Discovery",
-        "description": "Uncover business potential through KPIs and model analysis to guide understanding of unique needs."
+        "description": "Discover the potential for business growth through analysis of your unique needs and offer."
       },
       {
         "process": "Strategy",
-        "description": "Craft a bespoke strategy, outlining a tailored roadmap for success based on your specific requirements."
+        "description": "We utilize insights to craft a personalized roadmap aligned with your specific goals and objectives."
       },
       {
         "process": "Implementation",
-        "description": "Build and integrate cutting-edge solutions for seamless incorporation into your systems, driving operational efficiencies."
+        "description": "With precision, we turn our strategic vision into reality by integrating cutting-edge solutions that drive conversions."
       },
       {
         "process": "Optimization",
-        "description": "Ensure ongoing success with monthly check-ins, fine-tuning custom AI solutions to align with evolving business needs."
+        "description": "Continuously refining and perfecting, we fine-tune your campaigns for maximum impact, ensuring sustained growth."
       }
     ]
   },
@@ -167,7 +161,7 @@
       "0": "Voices of ",
       "1": "Success"
     },
-    "subheading": "Explore how businesses like yours thrive with Viayze through compelling testimonials. Gain insights into tangible benefits, fostering success through valued partnerships.",
+    "subheading": "Explore how businesses like yours thrive with Viayze through compelling testimonials. Gain insights into tangible benefits, from enhanced sales performance to overall audience engagement.",
     "reviews": [
       {
         "name": "Lyutobor Yareshko",
@@ -230,7 +224,8 @@
         "testimony": "The insights provided by Viayze's AI tools have been invaluable. Our marketing strategies are now more data-driven and effective, leading to higher engagement rates."
       }
     ],
-    "buttonText": "Build a Bot"
+    "endingtext": "Schedule a demo call to witness firsthand how our clients leverage hyper-personalized outreach to scale their businesses.",
+    "buttonText": "Get started"
   },
   "contactUsSection": {
     "contactInformation": {

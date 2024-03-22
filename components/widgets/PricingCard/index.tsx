@@ -10,6 +10,8 @@ interface Feature {
 interface PricingCardProps {
   title: string;
   price: string;
+  monthly?:string;
+  // hourly?:string;
   description: string;
   features: Feature[];
   buttonText: string;
@@ -20,6 +22,8 @@ interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({
   title,
   price,
+  monthly,
+  // hourly,
   description,
   features,
   buttonText,
@@ -35,7 +39,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
       )}
       <div className="flex flex-col gap-3 text-left border-b border-[#1F2937] pb-8">
         <h4 className="font-semibold text-[#22D3EE] tracking-[0.005rem]">{title}</h4>
+        <div className='flex w-fit gap-4 items-baseline'>
         <p className="font-semibold text-3xl text-[#CFFAFE] tracking-[0.00938rem]">{price}</p>
+        <p className='font-medium text-base text-[#06B6D4]'>{monthly}</p>
+        </div>
         <p className="font-medium text-sm text-[#9CA3AF] tracking-[0.00438rem]">{description}</p>
       </div>
       <ul className="flex flex-col gap-4">
@@ -48,8 +55,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </li>
         ))}
       </ul>
-      <a href={process.env.CTA_REDIRECT_LINK} target="_blank" rel="noopener noreferrer">
-        <Button shape={isActive ? 'filled' : 'surface'} size='small' width='100%'>{buttonText}</Button>
+      <a href={process.env.NEXT_PUBLIC_CTA_REDIRECT_LINK} target="_blank" rel="noopener noreferrer">
+        <Button shape={isActive ? 'filled' : 'filled'} size='small' width='100%'>{buttonText}</Button>
       </a>
     </div>
   );

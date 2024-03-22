@@ -43,14 +43,14 @@ const ClientReviews = () => {
           className="mx-auto flex max-w-[48rem] flex-col gap-3 lg:gap-4"
           variants={item}
         >
-          <h2 className="text-xl font-semibold tracking-[0.015rem] text-[#F3F4F6] lg:text-5xl">
+          <h2 className="text-xl font-bold tracking-[0.015rem] text-[#F3F4F6] lg:text-4xl lg:leading-[2.723rem]">
             <span>{data.clientReviewsSection.heading[0]}</span>
             <span className="text-[#22D3EE]">
               {" "}
               {data.clientReviewsSection.heading[1]}{" "}
             </span>
           </h2>
-          <p className="text-sm tracking-[0.005rem] text-[#D1D5DB] lg:text-base">
+          <p className="text-sm font-medium tracking-[0.005rem] text-[#D1D5DB] lg:text-base">
             {data.clientReviewsSection.subheading}
           </p>
         </motion.div>
@@ -69,10 +69,13 @@ const ClientReviews = () => {
         </InfiniteCarousel>
         <motion.div variants={item}>
           <a
-            href={process.env.CTA_REDIRECT_LINK}
+            href={process.env.NEXT_PUBLIC_CTA_REDIRECT_LINK}
             target="_blank"
             rel="noopener noreferrer"
           >
+          <p className="text-sm font-medium tracking-[0.005rem] text-[#D1D5DB] lg:text-base max-w-screen-sm mb-6 mt-8">
+            {data.clientReviewsSection.endingtext}
+          </p>
             <Button shape="filled" size="default" width={192}>
               Schedule a Demo
             </Button>

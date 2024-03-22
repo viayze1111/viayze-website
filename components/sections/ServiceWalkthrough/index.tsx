@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import workingProcess from "@/public/assets/icons/working-process.svg";
+import collectYourUser from "@/public/assets/images/collect_your_user.svg";
 import Image from "next/image";
 import Button from "@/components/widgets/Button";
 import { motion } from "framer-motion";
@@ -62,7 +62,7 @@ const ServiceWalkthrough = () => {
             }}
           >
             <Image
-              src={workingProcess}
+              src={collectYourUser}
               alt="data analysis process"
               width={433.633}
               height={298.041}
@@ -75,19 +75,23 @@ const ServiceWalkthrough = () => {
           variants={item}
         >
           <div className="flex flex-col gap-4">
-            <motion.span className="text-md bg-gradient-to-r from-cyan-500 to-cyan-600 bg-clip-text font-semibold tracking-[0.00438rem] text-transparent">
+            <motion.span className="text-sm bg-gradient-to-r from-cyan-500 to-cyan-600 bg-clip-text font-medium tracking-[0.00438rem] text-transparent">
               {data.howItWorksSection.highlight}
             </motion.span>
-            <motion.h2 className="text-xl font-bold tracking-[0.01125rem] text-[#F3F4F6] lg:text-4xl">
-              {data.howItWorksSection.heading}
-            </motion.h2>
-            <motion.p className="text-sm font-medium tracking-[0.00438rem] text-[#D1D5DB] lg:text-base lg:tracking-[0.007rem]">
+            <motion.h2 className="text-xl font-bold tracking-[0.00625rem] text-[#F3F4F6] lg:text-4xl lg:tracking-[0.015rem] lg:leading-[2.723rem]">
+            <span>{data.howItWorksSection.heading[0]}</span>
+            <span className="text-[#22D3EE]">
+              {" "}
+              {data.howItWorksSection.heading[1]}{" "}
+            </span>
+          </motion.h2>
+            <motion.p className="text-sm font-medium tracking-[0.00438rem] text-[#D1D5DB] lg:text-lg lg:tracking-[0.007rem] lg:leading-[1.75rem]">
               {data.howItWorksSection.description}
             </motion.p>
           </div>
           <motion.div variants={item}>
             <a
-              href={process.env.CTA_REDIRECT_LINK}
+              href={process.env.NEXT_PUBLIC_CTA_REDIRECT_LINK}
               target="_blank"
               rel="noopener noreferrer"
             >

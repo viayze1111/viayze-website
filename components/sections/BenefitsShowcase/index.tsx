@@ -45,7 +45,7 @@ const BenefitsShowcase = () => {
           className="mx-auto flex max-w-[48rem] flex-col gap-3 lg:gap-4"
           variants={item}
         >
-          <h2 className="text-xl font-semibold tracking-[0.015rem] text-[#F3F4F6] lg:text-5xl">
+          <h2 className="text-xl font-semibold tracking-[0.015rem] text-[#F3F4F6] lg:text-4xl lg:leading-[2.723rem] lg:font-bold">
             <span>{data.benefitsSection.heading[0]}</span>
             <span className="text-[#22D3EE]">
               {" "}
@@ -53,7 +53,7 @@ const BenefitsShowcase = () => {
             </span>
             <span>{data.benefitsSection.heading[2]}</span>
           </h2>
-          <p className="text-sm tracking-[0.005rem] text-[#D1D5DB] lg:text-base">
+          <p className="text-sm font-medium tracking-[0.005rem] text-[#D1D5DB] lg:text-base">
             {data.benefitsSection.subheading}
           </p>
         </motion.div>

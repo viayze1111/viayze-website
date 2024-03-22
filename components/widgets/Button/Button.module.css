@@ -1,5 +1,5 @@
 .root {
-  @apply inline-flex cursor-pointer items-center justify-center px-2.5 text-center font-semibold tracking-[0.00438rem] shadow-sm transition duration-150 ease-in-out;
+  @apply inline-flex cursor-pointer items-center justify-center px-2.5 text-center font-semibold tracking-[0.00438rem] leading-[1.059rem] shadow-sm transition duration-150 ease-in-out;
 }
 
 /********** SIZE **********/
@@ -9,7 +9,7 @@
 }
 
 .root[data-size="default"] {
-  @apply h-12 rounded-xl pt-[1px] text-[0.9375rem];
+  @apply h-12 rounded-xl pt-[1px] text-[0.9375rem] leading-[1.134rem] tracking-[0.0047rem];
 }
 
 /********** SURFACE **********/
@@ -30,4 +30,10 @@
 
 .root[data-shape="filled"]:hover {
   @apply bg-[#0E7490];
+}
+
+.root[data-shape="surface"][data-size="default"] { 
+  font-weight:600;
+  padding: 10px 20px;
+  width: auto !important;
 }
