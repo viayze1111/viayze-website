@@ -62,7 +62,7 @@
       },
       {
         "title": "Cost Reduction",
-        "description": "Maximizing value through strategic cost cutting"
+        "description": "Maximizing value by handling system costs"
       },
       {
         "title": "Time Saving",
@@ -70,7 +70,7 @@
       },
       {
         "title": "Process Automation",
-        "description": "Advancing innovation by implementing efficient, automated systems for streamlined processes"
+        "description": "Advancing innovation by implementing efficient, automated systems for hyper-personalized outreach at scale"
       }
     ]
   },
@@ -128,7 +128,7 @@
       "0": "Turning Readers into ",
       "1": "Lifelong Buyers"
     },
-    "description": "Personalization is the cornerstone of successful email marketing, and we've elevated it to new heights. By curating emails that resonate with the recipient, we propel engagement and conversion rates to extraordinary heights.",
+    "description": "Personalization is the cornerstone of successful email marketing, and we've elevated it to new heights. By curating emails that resonate with the recipient, we propel engagement and conversion rates to extraordinary levels.",
     "buttonText": "Get started"
   },
   "onBoardingSection": {
